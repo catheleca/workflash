@@ -1,27 +1,20 @@
-# Workflash Tecnologia — Landing Page v1
+# Workflash Tecnologia — Site 2.0
 
-Site estático responsivo em HTML, CSS e JavaScript.
+Site institucional multipáginas em HTML, CSS e JavaScript, preparado para hospedagem estática no GitHub Pages.
 
-## Visualizar
-Abra `index.html` no navegador, ou utilize a extensão Live Server no VS Code.
+## Publicação
+1. Faça backup do repositório atual.
+2. Substitua os arquivos publicados pelos arquivos desta pasta (mantenha os arquivos dentro da raiz do repositório).
+3. Confirme que `index.html` está na raiz e que o GitHub Pages publica a branch/pasta correta.
+4. Teste todos os links e o formulário após publicar.
 
-## Personalizar antes de publicar
-1. No `script.js`, substitua `CONTATO@SEU-DOMINIO.COM.BR` pelo endereço comercial real. Até lá, o formulário avisa que falta configurar o destinatário e não envia nada.
-2. Revise os textos de serviços, a descrição institucional e os dados da empresa.
-3. O símbolo em `assets/logo-symbol.svg` é uma **reconstrução vetorial aproximada** do conceito aprovado em imagem; substitua pelo vetor oficial quando ele estiver disponível.
-4. Confira domínio, DNS e HTTPS antes de divulgar. Não há integração de backend no formulário; ele abre o aplicativo de e-mail do visitante.
+## Antes de divulgar
+- Confirmar textos e responsabilidades profissionais dos fundadores.
+- Validar parceria e capacidade de entrega Odoo; o site não declara parceria oficial.
+- Confirmar que `contato@workflash.net` recebe e-mails.
+- O formulário abre o aplicativo de e-mail do visitante (mailto), **não** envia dados diretamente. Para envio no próprio site, será necessário configurar um serviço de formulários e uma política de privacidade adequada.
+- Confirmar escopo e capacidade operacional de suporte, especialmente contratos recorrentes.
+- Não há revenda de licenças Microsoft anunciada; o serviço é administração no ambiente do cliente.
 
-## Publicar no GitHub Pages
-1. Crie um repositório, adicione os arquivos preservando as pastas e faça o push.
-2. Em Settings > Pages, selecione Deploy from a branch, branch `main`, pasta `/ (root)`.
-3. Quando o domínio estiver registrado, configure `www.workflash.tec.br` como Custom domain nas configurações de Pages e crie os registros DNS conforme as instruções atuais do GitHub.
-4. Ative Enforce HTTPS quando disponível. O domínio indicado não foi verificado como registrado.
-
-## Estrutura
-- `index.html` — conteúdo e SEO básico
-- `styles.css` — identidade visual e responsividade
-- `script.js` — menu, ano e formulário via e-mail
-- `assets/` — símbolo e favicon
-
-## Futuro
-Separar seções em páginas de Soluções, Abordagem, Sobre e Contato; integrar formulário com serviço de backend e adicionar política de privacidade adequada.
+## Arquivos
+`index.html`, `solucoes.html`, `odoo.html`, `gestao-ti.html`, `suporte-saas.html`, `segmentos.html`, `quem-somos.html`, `contato.html`, `styles.css`, `script.js` e `assets/`.
