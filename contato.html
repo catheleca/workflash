@@ -64,22 +64,48 @@
                                 todo o Brasil e projetos presenciais conforme disponibilidade.</span>
                         </div>
                     </div>
-                    <form id="contact-form"><label for="name">Seu nome *</label><input id="name" name="name" required
-                            autocomplete="name"><label for="email">E-mail *</label><input id="email" name="email"
-                            type="email" required autocomplete="email"><label for="company">Empresa</label><input
-                            id="company" name="company" autocomplete="organization"><label for="service">Tenho interesse
-                            em</label><select id="service" name="service">
+
+                    <form id="contact-form" action="https://formspree.io/f/mzerworv" method="POST">
+
+                        <input type="hidden" name="_subject" value="Novo contato comercial - Workflash">
+
+                        <label for="name">Seu nome *</label>
+                        <input id="name" name="name" required autocomplete="name">
+
+                        <label for="email">E-mail *</label>
+                        <input id="email" name="email" type="email" required autocomplete="email">
+
+                        <label for="company">Empresa</label>
+                        <input id="company" name="company" autocomplete="organization">
+
+                        <label for="phone">Telefone / WhatsApp</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+                        <label for="service">Tenho interesse em</label>
+                        <select id="service" name="service">
                             <option>Gestão de TI para Empresas</option>
                             <option>ERP & CRM — Odoo</option>
                             <option>Gestão de Suporte SaaS</option>
                             <option>Quero conversar sobre outra necessidade</option>
-                        </select><label for="message">Como podemos ajudar? *</label><textarea id="message"
-                            name="message" required rows="5"></textarea><label class="consent"><input type="checkbox"
-                                required> Autorizo o uso destes dados exclusivamente para retorno ao meu
-                            contato.</label><button class="btn primary" type="submit">Preparar e-mail ↗</button>
-                        <p class="form-hint">Ao enviar, seu aplicativo de e-mail será aberto com a mensagem preenchida.
-                            Nenhum dado é enviado automaticamente pelo site.</p>
+                        </select>
+
+                        <label for="message">Como podemos ajudar? *</label>
+                        <textarea id="message" name="message" required rows="5"></textarea>
+
+                        <label class="consent">
+                            <input type="checkbox" name="consent" value="Autorizado" required>
+                            Autorizo o uso destes dados exclusivamente
+                            para retorno ao meu contato.
+                        </label>
+
+                        <button class="btn primary" type="submit">
+                            Enviar mensagem ↗
+                        </button>
+
+                        <p id="form-status" class="form-hint" role="status" aria-live="polite"></p>
+
                     </form>
+
                 </div>
             </div>
         </section>
