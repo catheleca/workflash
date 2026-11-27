@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0B1F3B">
+    <meta name="description"
+        content="Solicite um diagnóstico gratuito de TI para sua empresa. Conheça as soluções da Workflash Tecnologia.">
+
+    <title>Diagnóstico Gratuito | Workflash Tecnologia</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="diagnostico.css">
+    <script src="diagnostico.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="campaign-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/logo-symbol.svg" alt="" width="48" height="42">
+                <span>
+                    <strong>WORK<span>FLASH</span></strong>
+                    <small>TECNOLOGIA</small>
+                </span>
+            </a>
+
+            <a class="site-link" href="index.html">
+                Conheça nosso site ↗
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="campaign-hero">
+            <div class="container hero-layout">
+
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        SAQUAREMA CONECTA 2026
+                    </span>
+
+                    <h1>
+                        A TI da sua empresa funcionando,
+                        <em>para você cuidar do negócio.</em>
+                    </h1>
+
+                    <p>
+                        Organizamos a tecnologia, os sistemas e os
+                        processos da sua empresa para que você tenha
+                        mais segurança, produtividade e tranquilidade.
+                    </p>
+
+                    <div class="actions">
+                        <a href="#diagnostico" class="btn primary">
+                            Quero meu diagnóstico gratuito ↓
+                        </a>
+
+                        <a href="https://wa.me/5521966348035" class="btn outline" target="_blank"
+                            rel="noopener noreferrer">
+                            Conversar pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <span class="hero-note">
+                        Gratuito • Sem compromisso • Atendimento personalizado
+                    </span>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <img src="assets/logo-symbol.svg" alt="">
+
+                    <span class="chip chip-one">Pessoas</span>
+                    <span class="chip chip-two">Processos</span>
+                    <span class="chip chip-three">Tecnologia</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO DE CAPTAÇÃO -->
+
+        <section class="section diagnosis-section" id="diagnostico">
+            <div class="container diagnosis-layout">
+
+                <div class="diagnosis-copy">
+
+                    <span class="section-label">
+                        VAMOS CONVERSAR?
+                    </span>
+
+                    <h2>
+                        Descubra como a tecnologia pode
+                        transformar seu negócio.
+                    </h2>
+
+                    <p>
+                        Conte um pouco sobre sua empresa e seus desafios.
+                        Nossa equipe entrará em contato para realizar
+                        uma avaliação inicial gratuita.
+                    </p>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        Entenda os principais desafios da sua TI.
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        Identifique oportunidades de melhoria.
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        Conheça soluções adequadas ao seu negócio.
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        Sem compromisso de contratação.
+                    </div>
+
+                    <div class="contact-info">
+                        <strong>Prefere conversar diretamente?</strong>
+
+                        <a href="https://wa.me/5521966348035">
+                            WhatsApp: (21) 96634-8035
+                        </a>
+
+                        <a href="mailto:contato@workflash.net">
+                            contato@workflash.net
+                        </a>
+                    </div>
+
+                </div>
+
+                <form id="diagnosis-form" action="https://formspree.io/f/xbgobwke" method="POST" class="lead-form">
+
+                    <input type="hidden" name="_subject" value="Novo lead - Diagnóstico Workflash">
+
+                    <input type="hidden" name="origem" id="lead-source" value="saquarema-conecta-2026">
+
+                    <h3>Solicite seu diagnóstico gratuito</h3>
+
+                    <p class="form-description">
+                        Leva poucos minutos e é sem compromisso.
+                    </p>
+
+                    <label for="name">Seu nome *</label>
+
+                    <input id="name" name="name" autocomplete="name" placeholder="Nome completo" required>
+
+                    <label for="company">Nome da empresa *</label>
+
+                    <input id="company" name="company" autocomplete="organization" placeholder="Nome do seu negócio"
+                        required>
+
+                    <label for="phone">WhatsApp com DDD *</label>
+
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(21) 99999-9999" required>
+
+                    <label for="email">E-mail (opcional)</label>
+
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br"
+                        pattern="[^\s@]+@[^\s@]+\.[^\s@]+" aria-describedby="email-error">
+
+                    <span id="email-error" class="field-error" aria-live="polite"></span>
+
+                    <label for="segment">Segmento da empresa *</label>
+
+                    <select id="segment" name="segment" required>
+                        <option value="" disabled selected>
+                            Selecione uma opção
+                        </option>
+                        <option>Hotel, pousada ou hostel</option>
+                        <option>Restaurante, bar, café ou padaria</option>
+                        <option>Comércio e varejo</option>
+                        <option>Escritório e serviços profissionais</option>
+                        <option>Clínica ou consultório</option>
+                        <option>Software e tecnologia</option>
+                        <option>Outro segmento</option>
+                    </select>
+
+                    <label for="city">Cidade *</label>
+
+                    <input id="city" name="city" placeholder="Ex.: Saquarema - RJ" required>
+
+                    <label for="team">
+                        Quantas pessoas utilizam computador
+                        ou celular no negócio?
+                    </label>
+
+                    <select id="team" name="team">
+                        <option value="">Selecione uma opção</option>
+                        <option>1 a 5 pessoas</option>
+                        <option>6 a 15 pessoas</option>
+                        <option>16 a 50 pessoas</option>
+                        <option>Mais de 50 pessoas</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>
+                            Quais são seus principais desafios? *
+                        </legend>
+
+                        <p class="field-hint">
+                            Você pode selecionar mais de uma opção.
+                        </p>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Internet e Wi-Fi">
+                            Internet instável ou Wi-Fi fraco
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Computadores e impressoras">
+                            Problemas com computadores e impressoras
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Segurança e backup">
+                            Segurança da informação e backup
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="ERP e gestão empresarial">
+                            Controle de estoque, vendas e financeiro
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Atendimento ao cliente">
+                            Organização do atendimento ao cliente
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Equipamentos e acessos">
+                            Gestão de equipamentos e acessos
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Suporte SaaS">
+                            Gestão de suporte para empresas de software
+                        </label>
+
+                        <label class="check-option">
+                            <input type="checkbox" name="challenges" value="Conhecer soluções">
+                            Quero conhecer melhor as soluções da Workflash
+                        </label>
+
+                    </fieldset>
+
+                    <label for="deadline">
+                        Quando pretende resolver esses desafios?
+                    </label>
+
+                    <select id="deadline" name="deadline">
+                        <option value="">Selecione uma opção</option>
+                        <option>O mais rápido possível</option>
+                        <option>Nos próximos 30 dias</option>
+                        <option>Nos próximos 3 meses</option>
+                        <option>Ainda estou avaliando possibilidades</option>
+                    </select>
+
+                    <label for="message">
+                        Quer nos contar algo mais?
+                    </label>
+
+                    <textarea id="message" name="message" rows="3"
+                        placeholder="Conte um pouco sobre sua necessidade..."></textarea>
+
+                    <label class="check-option consent">
+                        <input type="checkbox" name="consent" value="Autorizado" required>
+
+                        Autorizo a Workflash Tecnologia a utilizar
+                        meus dados para entrar em contato sobre
+                        o diagnóstico solicitado.
+                    </label>
+
+                    <button class="btn primary submit-button" type="submit">
+                        Solicitar meu diagnóstico gratuito →
+                    </button>
+
+                    <p id="form-status" role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- NOSSAS SOLUÇÕES -->
+
+        <section class="section solutions-section" id="solucoes">
+            <div class="container">
+
+                <span class="section-label">NOSSAS SOLUÇÕES</span>
+
+                <h2>Como podemos ajudar sua empresa?</h2>
+
+                <div class="card-grid">
+
+                    <article class="solution-card">
+                        <span class="card-label">
+                            SISTEMAS EMPRESARIAIS
+                        </span>
+
+                        <h3>ERP &amp; CRM — Odoo</h3>
+
+                        <p>
+                            Integre vendas, estoque, compras,
+                            financeiro e relacionamento com clientes
+                            em um único sistema.
+                        </p>
+
+                        <a href="odoo.html">Saiba mais ↗</a>
+                    </article>
+
+                    <article class="solution-card">
+                        <span class="card-label">
+                            TECNOLOGIA CORPORATIVA
+                        </span>
+
+                        <h3>Gestão de TI para Empresas</h3>
+
+                        <p>
+                            Redes, Wi-Fi, computadores, Microsoft 365,
+                            segurança, backup, monitoramento e suporte
+                            para toda a sua equipe.
+                        </p>
+
+                        <a href="gestao-ti.html">Saiba mais ↗</a>
+                    </article>
+
+                    <article class="solution-card">
+                        <span class="card-label">
+                            OPERAÇÕES E SERVIÇOS
+                        </span>
+
+                        <h3>Gestão de Suporte SaaS</h3>
+
+                        <p>
+                            Estruturamos o atendimento aos seus
+                            clientes, organizando chamados, processos,
+                            prazos e indicadores de qualidade.
+                        </p>
+
+                        <a href="suporte-saas.html">Saiba mais ↗</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROBLEMAS QUE RESOLVEMOS -->
+
+        <section class="section problems-section">
+            <div class="container">
+
+                <span class="section-label">
+                    TECNOLOGIA NA PRÁTICA
+                </span>
+
+                <h2>Reconhece algum desses problemas?</h2>
+
+                <div class="problems-grid">
+
+                    <article class="problem-card">
+                        <span>HOTÉIS E POUSADAS</span>
+                        <h3>A internet caiu e a recepção parou.</h3>
+                        <p>
+                            Reservas, check-in e pagamentos
+                            prejudicados por falhas de conexão.
+                        </p>
+                    </article>
+
+                    <article class="problem-card">
+                        <span>RESTAURANTES</span>
+                        <h3>O caixa parou no horário de pico.</h3>
+                        <p>
+                            Problemas de conexão interrompem
+                            pagamentos e impactam suas vendas.
+                        </p>
+                    </article>
+
+                    <article class="problem-card">
+                        <span>COMÉRCIO E VAREJO</span>
+                        <h3>Estoque no papel é dinheiro parado.</h3>
+                        <p>
+                            Falta de integração entre estoque,
+                            vendas, compras e financeiro.
+                        </p>
+                    </article>
+
+                    <article class="problem-card">
+                        <span>ESCRITÓRIOS E CLÍNICAS</span>
+                        <h3>Seu backup realmente funciona?</h3>
+                        <p>
+                            Dados importantes precisam estar
+                            protegidos e disponíveis quando
+                            você mais precisa.
+                        </p>
+                    </article>
+
+                </div>
+
+                <a href="#diagnostico" class="btn primary">
+                    Vamos resolver esses desafios →
+                </a>
+
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+
+        <section class="section">
+            <div class="container">
+
+                <span class="section-label">NOSSO JEITO DE TRABALHAR</span>
+
+                <h2>Da necessidade à solução.</h2>
+
+                <div class="card-grid">
+
+                    <article class="solution-card">
+                        <span class="card-label">ETAPA 01</span>
+                        <h3>Conversa</h3>
+                        <p>
+                            Entendemos sua empresa, sua operação
+                            e seus principais desafios.
+                        </p>
+                    </article>
+
+                    <article class="solution-card">
+                        <span class="card-label">ETAPA 02</span>
+                        <h3>Diagnóstico gratuito</h3>
+                        <p>
+                            Avaliamos suas necessidades e
+                            identificamos oportunidades de melhoria.
+                        </p>
+                    </article>
+
+                    <article class="solution-card">
+                        <span class="card-label">ETAPA 03</span>
+                        <h3>Proposta sob medida</h3>
+                        <p>
+                            Apresentamos soluções adequadas à
+                            realidade e aos objetivos do seu negócio.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOLDER DIGITAL -->
+
+        <section class="section brochure-section">
+            <div class="container brochure-layout">
+
+                <div>
+                    <span class="section-label">
+                        LEVE A WORKFLASH COM VOCÊ
+                    </span>
+
+                    <h2>Conheça nosso material institucional.</h2>
+
+                    <p>
+                        Saiba mais sobre nossas soluções e compartilhe
+                        com seus sócios, parceiros e equipe.
+                    </p>
+                </div>
+
+                <div class="brochure-actions">
+                    <a class="btn primary" href="assets/folder-workflash.pdf" target="_blank" rel="noopener noreferrer">
+                        Visualizar folder ↗
+                    </a>
+
+                    <a class="btn secondary" href="assets/folder-workflash.pdf" download>
+                        Baixar PDF ↓
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+
+        <section class="final-cta">
+            <div class="container">
+
+                <span class="eyebrow">PESSOAS • PROCESSOS • TECNOLOGIA</span>
+
+                <h2>Vamos construir a próxima solução juntos?</h2>
+
+                <p>
+                    Rio de Janeiro, Região dos Lagos e
+                    atendimento remoto em todo o Brasil.
+                </p>
+
+                <a href="#diagnostico" class="btn primary">
+                    Solicitar diagnóstico gratuito →
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div class="container footer-inner">
+
+            <a class="brand" href="index.html">
+                <img src="assets/logo-symbol.svg" alt="" width="42" height="38">
+                <span>
+                    <strong>WORK<span>FLASH</span></strong>
+                    <small>TECNOLOGIA</small>
+                </span>
+            </a>
+
+            <div class="footer-contact">
+                <a href="mailto:contato@workflash.net">
+                    contato@workflash.net
+                </a>
+
+                <a href="https://wa.me/5521966348035">
+                    (21) 96634-8035
+                </a>
+
+                <a href="https://workflash.net">
+                    workflash.net
+                </a>
+            </div>
+
+            <small>
+                © <span id="year">2026</span> Workflash Tecnologia
+            </small>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
